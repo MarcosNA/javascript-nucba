@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.calcuInfo{
+    margin: 0.5rem;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+}
+
+.calcuInfo li{
+    list-style: none;
+}
+
+.calcuInit{
+    margin: 0.5rem;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 1.2rem;
+}
+
+.calcuInit button{
+    width: 100px;
+    height: 40px;
+    color: #dddddd;
+    background-color: #6e0707;
+    border: 2px solid #000000;
+    border-radius: 20%;
+    font-size: 1rem;
+}
