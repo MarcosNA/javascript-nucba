@@ -7,10 +7,10 @@
 //ajax: son peticiones a servidores
 
 
-const API_URL = "https://jsonplaceholder.typicode.com"
+//const API_URL = "https://jsonplaceholder.typicode.com"
 
-const datos = document.querySelector("#dataContainer")
-const ulElement = document.createElement(`ul`)
+//const datos = document.querySelector("#dataContainer")
+//const ulElement = document.createElement(`ul`)
 
 /*fetch (`${API_URL}/users`)
     .then(Response => Response.json())
@@ -20,7 +20,7 @@ const ulElement = document.createElement(`ul`)
     })*/
 
 
-fetch (`${API_URL}/users`)
+/*fetch (`${API_URL}/users`)
     .then(Response => Response.json())
     .then(users =>{
         users.map(users =>{
@@ -31,4 +31,29 @@ fetch (`${API_URL}/users`)
             ulElement.appendChild(liElement)
         })
     datos.appendChild(ulElement)
+})*/
+
+const API_URL = "https://jsonplaceholder.typicode.com"
+
+const loadUsers = async() =>{
+    /*const response = await fetch(`${API_URL}/users`)
+    const users = await response.json()
+    return users*/
+
+    return(await fetch(`${API_URL}/users`)).json()
+}
+
+document.addEventListener("DOMContentLoaded",async() =>{
+    let users = []
+    
+    try{
+        users = await loadUsers()
+
+    }catch(error){
+        console.log(error)
+    }
+
+    console.log(users)
 })
+
+
