@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/characters.css">
+    <link rel="stylesheet" href="./iComoon/style.css">
+    <title>Rick & Morty App</title>
+</head>
+<body class="hidden">
+    <div class="loader-centrado" id="onload">
+        <div class="lds-hourglass"></div>
+    </div>
+    
+
+    <header class="header">
+
+        <div class="logo">
+            <a href="index.html"><img src="./image/logo.png" alt="logo"></a>
+        </div>
+
+        <nav class="nav">
+            <div><a href="episodios.html">Episodios</a></div>
+            <div><a href="personajes.html">Personajes</a></div>
+            <div><a href="">Produccion</a></div>
+            <div><a href="">Tienda</a></div>
+        </nav>
+
+        <div class="cart">
+            <i class="icon-cart"></i>
+            <i class="icon-user"></i>
+        </div>
+
+    </header>
+
+
+    <section class="character-container">
+        <h1 class="title">Personajes</h1>
+        <div id="characters"></div>
+    </section>
+
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="./assets/js/characters.js"></script>
+<script src="./assets/js/loader.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: get_schwifty;
+}
+
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+@font-face{
+    font-family: get_schwifty;
+    src: url(`/src/fuente/get_schwifty.ttf`) format(truetype);
+}
+
+body{
+    background-color: #aaa3a3;
+
+    .header{
+        background-color: rgb(37, 107, 92);
+        height: 200px;
+        border: solid black 5px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+            .logo{ 
+                flex: 1 1 auto;
+                width: 150px;
+                height: 150px;
+            }
+            .nav{
+                flex: 5 1 auto;
+                flex-grow: 2;
+                display: flex;
+                justify-content: space-evenly;
+                div a{
+                        font-size: 30px;
+                        font-weight: 600;
+                        text-decoration: none;
+                        color: #000000;
+                }
+            }
+            .cart{
+                flex: 1 1 auto;
+                display: flex;
+                justify-content: center;
+                i{
+                    font-size: 35px;
+                    color: black;
+                    padding: 15px;
+                }
+            }
+
+    }
+
+}
